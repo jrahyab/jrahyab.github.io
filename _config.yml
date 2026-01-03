@@ -7,3 +7,5 @@ author:
   name: Jumakhan Rahyab
 
 show_downloads: false
+
+{% include footer.html %}
