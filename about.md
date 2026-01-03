@@ -18,3 +18,5 @@ institutional design, and ecosystem coordination come together to drive sustaina
 innovation-led growth.
 
 [Download CV](assets/pdf/Jumakhan_Rahyab_CV.pdf)
+
+{% include footer.html %}
