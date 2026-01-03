@@ -22,3 +22,5 @@ At MIT REAP, I help teams translate ambitious priorities into focused initiative
 - Email: your@email.com
 - LinkedIn: https://linkedin.com/in/yourprofile
 - GitHub: https://github.com/jrahyab
+
+{% include footer.html %}
