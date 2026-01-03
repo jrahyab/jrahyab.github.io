@@ -5,17 +5,14 @@ title: Home
 
 {% include nav.html %}
 
-# Jumakhan Rahyab
 
 **Assistant Director, MIT Regional Entrepreneurship Acceleration Program (MIT REAP)**
 
-I work at the intersection of **AI, entrepreneurship, and innovation ecosystems**, supporting leadership teams across the world in building action-oriented, innovation-driven growth strategies.
-
-At MIT REAP, I help teams translate ambitious priorities into focused initiatives—aligning stakeholders, sequencing interventions, and moving from strategy to execution.
+At MIT REAP, I work with regions around the world to build entrepreneurial, innovation-driven ecosystems—bringing stakeholders together and helping teams from developing strategy to coordinated execution and making impact.
 
 ## Current focus
-- AI strategy and adoption in mission-driven organizations
 - Innovation-driven entrepreneurship and ecosystem design
+- AI strategy and adoption in regions around the world
 - Building simple tools that improve how programs operate and scale
 
 ## Contact
