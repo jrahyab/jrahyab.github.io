@@ -7,11 +7,8 @@ title: Work
 
 ## MIT Regional Entrepreneurship Acceleration Program (MIT REAP)
 
-At MIT REAP, I support leadership teams from around the world in designing and executing
+At MIT REAP, I support teams from around the world in designing and executing
 **innovation-driven growth strategies**.
-
-My work focuses on translating high-level economic priorities into
-**focused, action-oriented initiatives**, including:
 
 - Program design and execution for global, multi-stakeholder teams  
 - Faculty coordination and engagement with regional innovation ecosystems  
