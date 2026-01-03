@@ -48,3 +48,6 @@ This includes:
 
 My work spans both emerging and advanced economies, with an emphasis on
 **practical execution over abstract frameworks**.
+
+{% include footer.html %}
+
