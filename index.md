@@ -2,6 +2,7 @@
 layout: default
 title: Home
 ---
+{% include nav.html %}
 
 # Jumakhan Rahyab
 
