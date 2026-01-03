@@ -2,7 +2,7 @@
 layout: default
 title: About
 ---
-
+{% include nav.html %}
 I work across AI, entrepreneurship, and global innovation systems.
 
 Currently, I am part of **MIT Sloan’s Global Programs**, supporting
