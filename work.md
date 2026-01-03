@@ -2,6 +2,7 @@
 layout: default
 title: Work
 ---
+{% include nav.html %}
 
 ## MIT REAP
 - Program design and execution for global teams
