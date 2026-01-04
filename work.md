@@ -5,7 +5,7 @@ title: Work
 
 {% include nav.html %}
 
-## MIT Regional Entrepreneurship Acceleration Program (MIT REAP)
+#### MIT Regional Entrepreneurship Acceleration Program (MIT REAP)
 
 At MIT REAP, I support regions across emerging and advanced economies in designing
 and executing **innovation-driven entrepreneurial ecosystems**.
