@@ -5,19 +5,11 @@ title: Home
 
 {% include nav.html %}
 
-# Jumakhan Rahyab
-
-**Assistant Director, MIT Regional Entrepreneurship Acceleration Program (MIT REAP)**
-
 ## About
 
-At **MIT REAP**, I work with regions around the world to build entrepreneurial,
-innovation-driven ecosystems—bringing stakeholders together and helping teams
-move from strategy to coordinated execution and real impact.
+I’m the Assistant Director at MIT Sloan’s Global Programs, working with the MIT Regional Entrepreneurship Acceleration Program (MIT REAP). I help regions around the world to build innovation-driven entreprenuerial ecosystems--taking messy, complex economic challenges and turn them into clear, innovation-led growth strategies.
 
-My background spans applied mathematics and machine learning, international
-development, and program leadership, with a focus on practical execution over
-abstract frameworks.
+My background is in entrepreneurship, applied mathematics and machine learning, international development, and program leadership. I am focused on how technical understanding, institutional design, and ecosystem coordination come together to drive sustainable, innovation-driven growth.
 
 ## Contact
 - Email: your@email.com
