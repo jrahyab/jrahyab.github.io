@@ -9,6 +9,18 @@ import {
   Download
 } from 'lucide-react';
 
+const SubstackIcon = ({ size = 14 }) => (
+  <svg
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="currentColor"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path d="M22.539 8.242H1.46V5.406h21.078v2.836zM1.46 10.812V24L12 18.11 22.54 24V10.812H1.46zM22.54 0H1.46v2.836h21.078V0z" />
+  </svg>
+);
+
 const App = () => {
   const [activeTab, setActiveTab] = useState('about');
 
@@ -41,7 +53,7 @@ const App = () => {
     {
       title: "Quantitative Dynamics of Innovation Hubs",
       journal: "Journal of Economic Dynamics",
-      year: "2023",
+      year: "2026",
       link: "#"
     }
   ];
@@ -65,15 +77,23 @@ const App = () => {
       <header className="max-w-3xl mx-auto pt-24 px-6 pb-10">
         <h1 className="text-3xl font-medium text-slate-900 mb-1 tracking-tight">Jumakhan Rahyab</h1>
         <p className="text-base text-slate-500 font-sans tracking-wide mb-8 uppercase text-[13px]">
-          math, entrepreneurship, and innovation ecosystems
+          mathematics, entrepreneurship, and innovation ecosystems
         </p>
         
         <div className="flex flex-wrap gap-6 text-[13px] font-sans text-slate-400 uppercase tracking-[0.15em]">
           <a href="mailto:jrahyab@mit.edu" className="hover:text-slate-900 transition-colors flex items-center gap-2">
             <Mail size={14} /> Email
           </a>
-          <a href="https://linkedin.com/in/jrahyab" className="hover:text-slate-900 transition-colors flex items-center gap-2">
+          <a href="https://www.linkedin.com/in/jumakhanrahyab/" className="hover:text-slate-900 transition-colors flex items-center gap-2">
             <Linkedin size={14} /> LinkedIn
+          </a>
+          <a
+            href="https://jumakhan.substack.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-slate-900 transition-colors flex items-center gap-2"
+          >
+            <SubstackIcon size={14} /> Substack
           </a>
           <a href="https://github.com/jrahyab" className="hover:text-slate-900 transition-colors flex items-center gap-2">
             <Github size={14} /> GitHub
@@ -108,9 +128,9 @@ const App = () => {
             <section className="animate-in fade-in duration-500">
               <div className="prose prose-slate max-w-none text-slate-700 leading-[1.8]">
                 <p className="text-[17px] mb-6">
-                  I am the Assistant Director at MIT Sloan Global Programs, managing strategic initiatives for the 
+                  I am the Assistant Director at MIT Sloan Global Programs, working with the 
                   <span className="text-slate-900"> MIT Regional Entrepreneurship Acceleration Program (MIT REAP)</span>. 
-                  My work is centered on the intersection of institutional strategy and quantitative analysis.
+                  My work is centered on the intersection of institutional strategy and innovation ecosystem.
                 </p>
                 <p className="text-[17px] mb-12">
                   My research interests lie in applying mathematics and machine learning to understand complex economic systems, specifically looking at how stakeholder coordination affects regional growth.
@@ -188,7 +208,7 @@ const App = () => {
               <div className="text-center">
                 <FileText size={40} className="mx-auto text-slate-200 mb-6" strokeWidth={1} />
                 <h3 className="text-lg font-normal text-slate-800 mb-2">Curriculum Vitae</h3>
-                <p className="text-sm text-slate-500 mb-8 font-sans uppercase tracking-wider">Latest Update: February 2024</p>
+                <p className="text-sm text-slate-500 mb-8 font-sans uppercase tracking-wider">Latest Update: February 2026</p>
                 
                 <div className="flex gap-4 justify-center">
                   <a 
