@@ -204,29 +204,23 @@ const App = () => {
           )}
 
           {activeTab === 'resume' && (
-            <section className="animate-in fade-in duration-500 py-10 flex flex-col items-center justify-center border border-dashed border-slate-100 rounded-lg">
-              <div className="text-center">
-                <FileText size={40} className="mx-auto text-slate-200 mb-6" strokeWidth={1} />
-                <h3 className="text-lg font-normal text-slate-800 mb-2">Curriculum Vitae</h3>
-                <p className="text-sm text-slate-500 mb-8 font-sans uppercase tracking-wider">Latest Update: February 2026</p>
-                
-                <div className="flex gap-4 justify-center">
-                  <a 
-                    href="/path-to-your-resume.pdf" 
-                    className="flex items-center gap-2 px-6 py-2 bg-slate-900 text-white font-sans text-[12px] uppercase tracking-widest hover:bg-slate-700 transition-all rounded"
-                    target="_blank"
-                  >
-                    <ExternalLink size={14} /> Open PDF
-                  </a>
-                  <a 
-                    href="/path-to-your-resume.pdf" 
-                    download
-                    className="flex items-center gap-2 px-6 py-2 border border-slate-200 text-slate-600 font-sans text-[12px] uppercase tracking-widest hover:border-slate-900 hover:text-slate-900 transition-all rounded"
-                  >
-                    <Download size={14} /> Download
-                  </a>
-                </div>
-              </div>
+            <section className="animate-in fade-in duration-500 py-16 text-center">
+              <h3 className="text-xl font-normal text-slate-900 mb-2">
+                Curriculum Vitae
+              </h3>
+
+              <p className="text-sm text-slate-500 mb-10 font-sans uppercase tracking-wider">
+                Latest Update: February 2026
+              </p>
+
+              <a
+                href="/Jumakhan-Rahyab-CV.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-6 py-2 bg-slate-900 text-white font-sans text-[12px] uppercase tracking-widest hover:bg-slate-700 transition-all rounded"
+              >
+                <ExternalLink size={14} /> View PDF
+              </a>
             </section>
           )}
         </div>
