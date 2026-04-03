@@ -29,45 +29,46 @@ const App = () => {
     "Applied Mathematics & Stochastic Processes",
     "Machine Learning in Economic Modeling",
     "Institutional Design & Regional Policy",
-    "Complexity Economics"
   ];
 
   const workingPapers = [
     {
       title: "Regional Entrepreneurship Acceleration: A Framework for Innovation-Driven Ecosystems",
       journal: "Working Paper / MIT Sloan",
-      year: "2024",
-      status: "Under Review",
+      year: "2026",
+      status: "In Progress",
       link: "#"
     },
     {
-      title: "Stochastic Modeling of Stakeholder Coordination in Emerging Markets",
-      journal: "Technical Report",
-      year: "2024",
-      status: "In Progress",
-      link: "#"
-    }
-  ];
+  //     title: "Stochastic Modeling of Stakeholder Coordination in Emerging Markets",
+  //     journal: "Technical Report",
+  //     year: "2024",
+  //     status: "In Progress",
+  //     link: "#"
+  //   }
+  // ];
 
-  const pastPublications = [
-    {
-      title: "Quantitative Dynamics of Innovation Hubs",
-      journal: "Journal of Economic Dynamics",
-      year: "2026",
-      link: "#"
-    }
-  ];
+  // const pastPublications = [
+  //   {
+  //     title: "Quantitative Dynamics of Innovation Hubs",
+  //     journal: "Journal of Economic Dynamics",
+  //     year: "2026",
+  //     link: "#"
+  //   }
+  // ];
 
   const projects = [
     {
-      title: "MIT REAP Ecosystem Mapping",
-      description: "A quantitative approach to visualizing regional stakeholder coordination and resource flow within innovation hubs.",
-      tools: "Python, NetworkX"
+      title: "Regional Innovation Ecosystem",
+      description: "A systems-level approach to analyzing, mapping, and strengthening regional innovation ecosystems through data, networks, and coordinated strategy."
     },
     {
-      title: "Stochastic Market Dynamics",
-      description: "Mathematical modeling of entrepreneurial entry rates using Markov chains and historical policy data.",
-      tools: "MATLAB, R"
+      title: "MIT REAP Brain Intelligence",
+      description: "An AI-powered knowledge and decision-support system that leverages MIT REAP data, frameworks, and global insights to guide ecosystem strategy and stakeholder coordination."
+    },
+    {
+      title: "The Eigen Lab",
+      description: "A platform for exploring complex systems through first-principles thinking, combining mathematical rigor, visual intuition, and computational modeling."
     }
   ];
 
@@ -128,12 +129,12 @@ const App = () => {
             <section className="animate-in fade-in duration-500">
               <div className="prose prose-slate max-w-none text-slate-700 leading-[1.8]">
                 <p className="text-[17px] mb-6">
-                  I am the Assistant Director at MIT Sloan Global Programs, working with the 
-                  <span className="text-slate-900"> MIT Regional Entrepreneurship Acceleration Program (MIT REAP)</span>. 
-                  My work is centered on the intersection of institutional strategy and innovation ecosystem.
+                  I am the Assistant Director at MIT Sloan Global Programs, where I work on the
+                  <span className="text-slate-900"> MIT Regional Entrepreneurship Acceleration Program (MIT REAP)</span>,
+                  a global initiative focused on building innovation-driven entrepreneurship ecosystems. My work centers on coordinating across institutional stakeholders—government, industry, academia, and entrepreneurs—to support regional strategy and ecosystem development.
                 </p>
                 <p className="text-[17px] mb-12">
-                  My research interests lie in applying mathematics and machine learning to understand complex economic systems, specifically looking at how stakeholder coordination affects regional growth.
+                  My research interests lie in applying mathematics and machine learning to understand complex economic systems, with a particular focus on how stakeholder coordination shapes regional growth and innovation outcomes.
                 </p>
                 
                 <h3 className="font-sans text-[11px] uppercase tracking-[0.25em] text-slate-400 mb-6">Current Focus Areas</h3>
@@ -196,7 +197,7 @@ const App = () => {
                   <div key={i}>
                     <h4 className="text-[18px] font-normal text-slate-800 mb-2">{project.title}</h4>
                     <p className="text-[16px] text-slate-600 mb-3">{project.description}</p>
-                    <p className="font-sans text-[12px] text-slate-400 uppercase tracking-tighter">Tools: {project.tools}</p>
+                    {project.tools && <p className="font-sans text-[12px] text-slate-400 uppercase tracking-tighter">Tools: {project.tools}</p>}
                   </div>
                 ))}
               </div>
@@ -214,7 +215,7 @@ const App = () => {
               </p>
 
               <a
-                href="/Jumakhan-Rahyab-CV.pdf"
+                href="/Jumakhan_Rahyab_Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-6 py-2 bg-slate-900 text-white font-sans text-[12px] uppercase tracking-widest hover:bg-slate-700 transition-all rounded"
