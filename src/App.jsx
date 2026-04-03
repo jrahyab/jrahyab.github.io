@@ -5,8 +5,7 @@ import {
   Mail, 
   FileText,
   MapPin,
-  ExternalLink,
-  Download
+  ExternalLink
 } from 'lucide-react';
 
 const SubstackIcon = ({ size = 14 }) => (
@@ -38,24 +37,28 @@ const App = () => {
       year: "2026",
       status: "In Progress",
       link: "#"
-    },
+    }
+    /* ,
     {
-  //     title: "Stochastic Modeling of Stakeholder Coordination in Emerging Markets",
-  //     journal: "Technical Report",
-  //     year: "2024",
-  //     status: "In Progress",
-  //     link: "#"
-  //   }
-  // ];
+      title: "Stochastic Modeling of Stakeholder Coordination in Emerging Markets",
+      journal: "Technical Report",
+      year: "2024",
+      status: "In Progress",
+      link: "#"
+    }
+    */
+  ];
 
-  // const pastPublications = [
-  //   {
-  //     title: "Quantitative Dynamics of Innovation Hubs",
-  //     journal: "Journal of Economic Dynamics",
-  //     year: "2026",
-  //     link: "#"
-  //   }
-  // ];
+  const pastPublications = [
+    /*
+    {
+      title: "Quantitative Dynamics of Innovation Hubs",
+      journal: "Journal of Economic Dynamics",
+      year: "2026",
+      link: "#"
+    }
+    */
+  ];
 
   const projects = [
     {
@@ -170,22 +173,26 @@ const App = () => {
               </div>
 
               {/* Selected Publications */}
-              <h3 className="font-sans text-[11px] uppercase tracking-[0.25em] text-slate-400 mb-8">Selected Publications</h3>
-              <div className="space-y-10">
-                {pastPublications.map((pub, i) => (
-                  <div key={i} className="group">
-                    <h4 className="text-[18px] font-normal text-slate-800 leading-snug mb-1">
-                      {pub.title}
-                    </h4>
-                    <p className="text-[14px] text-slate-500 italic">
-                      {pub.journal}, {pub.year}
-                    </p>
-                    <a href={pub.link} className="inline-flex items-center gap-2 text-[11px] text-slate-400 mt-3 hover:text-slate-900 font-sans uppercase tracking-widest transition-colors">
-                      <FileText size={12} /> Manuscript
-                    </a>
+              {pastPublications.length > 0 && (
+                <>
+                  <h3 className="font-sans text-[11px] uppercase tracking-[0.25em] text-slate-400 mb-8">Selected Publications</h3>
+                  <div className="space-y-10">
+                    {pastPublications.map((pub, i) => (
+                      <div key={i} className="group">
+                        <h4 className="text-[18px] font-normal text-slate-800 leading-snug mb-1">
+                          {pub.title}
+                        </h4>
+                        <p className="text-[14px] text-slate-500 italic">
+                          {pub.journal}, {pub.year}
+                        </p>
+                        <a href={pub.link} className="inline-flex items-center gap-2 text-[11px] text-slate-400 mt-3 hover:text-slate-900 font-sans uppercase tracking-widest transition-colors">
+                          <FileText size={12} /> Manuscript
+                        </a>
+                      </div>
+                    ))}
                   </div>
-                ))}
-              </div>
+                </>
+              )}
             </section>
           )}
 
