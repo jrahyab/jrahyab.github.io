@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import { 
-  Github, 
-  Linkedin, 
-  Mail, 
+import {
+  Github,
+  Linkedin,
+  Mail,
   FileText,
   MapPin,
   ExternalLink
@@ -33,7 +33,7 @@ const App = () => {
   const workingPapers = [
     {
       title: "Regional Entrepreneurship Acceleration: A Framework for Innovation-Driven Ecosystems",
-      journal: "Working Paper / MIT Sloan",
+      journal: "Working Paper / Publication",
       year: "2026",
       status: "In Progress",
       link: "#"
@@ -63,15 +63,18 @@ const App = () => {
   const projects = [
     {
       title: "Regional Innovation Ecosystem",
-      description: "A systems-level approach to analyzing, mapping, and strengthening regional innovation ecosystems through data, networks, and coordinated strategy."
+      description: "A systems-level approach to analyzing, mapping, and strengthening regional innovation ecosystems through data, networks, and coordinated strategy.",
+      link: "#"
     },
     {
       title: "MIT REAP Brain Intelligence",
-      description: "An AI-powered knowledge and decision-support system that leverages MIT REAP data, frameworks, and global insights to guide ecosystem strategy and stakeholder coordination."
+      description: "An AI-powered knowledge and decision-support system that leverages MIT REAP data, frameworks, and global insights to guide ecosystem strategy and stakeholder coordination.",
+      link: "#"
     },
     {
       title: "The Eigen Lab",
-      description: "A platform for exploring complex systems through first-principles thinking, combining mathematical rigor, visual intuition, and computational modeling."
+      description: "A platform for exploring complex systems through first-principles thinking, combining mathematical rigor, visual intuition, and computational modeling.",
+      link: "#"
     }
   ];
 
@@ -83,7 +86,7 @@ const App = () => {
         <p className="text-base text-slate-500 font-sans tracking-wide mb-8 uppercase text-[13px]">
           mathematics, entrepreneurship, and innovation ecosystems
         </p>
-        
+
         <div className="flex flex-wrap gap-6 text-[13px] font-sans text-slate-400 uppercase tracking-[0.15em]">
           <a href="mailto:jrahyab@mit.edu" className="hover:text-slate-900 transition-colors flex items-center gap-2">
             <Mail size={14} /> Email
@@ -115,11 +118,10 @@ const App = () => {
             <button
               key={tab}
               onClick={() => setActiveTab(tab)}
-              className={`pb-4 border-b transition-all ${
-                activeTab === tab 
-                ? 'border-slate-900 text-slate-900' 
-                : 'border-transparent text-slate-400 hover:text-slate-600'
-              }`}
+              className={`pb-4 border-b transition-all ${activeTab === tab
+                  ? 'border-slate-900 text-slate-900'
+                  : 'border-transparent text-slate-400 hover:text-slate-600'
+                }`}
             >
               {tab === 'resume' ? 'CV/Resume' : tab}
             </button>
@@ -139,7 +141,7 @@ const App = () => {
                 <p className="text-[17px] mb-12">
                   My research interests lie in applying mathematics and machine learning to understand complex economic systems, with a particular focus on how stakeholder coordination shapes regional growth and innovation outcomes.
                 </p>
-                
+
                 <h3 className="font-sans text-[11px] uppercase tracking-[0.25em] text-slate-400 mb-6">Current Focus Areas</h3>
                 <ul className="list-none p-0 grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-3 text-[15px]">
                   {researchInterests.map((interest, i) => (
@@ -199,12 +201,26 @@ const App = () => {
           {activeTab === 'projects' && (
             <section className="animate-in fade-in duration-500">
               <h3 className="font-sans text-[11px] uppercase tracking-[0.25em] text-slate-400 mb-10">Selected Projects</h3>
-              <div className="space-y-12">
+              <div className="space-y-10">
                 {projects.map((project, i) => (
-                  <div key={i}>
-                    <h4 className="text-[18px] font-normal text-slate-800 mb-2">{project.title}</h4>
-                    <p className="text-[16px] text-slate-600 mb-3">{project.description}</p>
-                    {project.tools && <p className="font-sans text-[12px] text-slate-400 uppercase tracking-tighter">Tools: {project.tools}</p>}
+                  <div key={i} className="group border-b border-slate-100 pb-10 last:border-0 last:pb-0">
+                    <h4 className="text-[16px] font-medium text-slate-900 mb-2">{project.title}</h4>
+                    <p className="text-[15px] text-slate-600 mb-4 leading-relaxed">{project.description}</p>
+                    <div className="flex items-center gap-6">
+                      {project.tools && (
+                        <p className="font-sans text-[11px] text-slate-400 uppercase tracking-widest">
+                          Tools: {project.tools}
+                        </p>
+                      )}
+                      {project.link && (
+                        <a
+                          href={project.link}
+                          className="inline-flex items-center gap-1.5 text-[11px] text-slate-400 hover:text-slate-900 font-sans uppercase tracking-widest transition-colors"
+                        >
+                          <ExternalLink size={12} /> View Project
+                        </a>
+                      )}
+                    </div>
                   </div>
                 ))}
               </div>
